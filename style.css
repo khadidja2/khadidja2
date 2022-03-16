@@ -1,0 +1,174 @@
+
+
+html{
+    scroll-behavior:smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+   font-size: sans-serif;
+    
+}
+
+/*------------fond d'ecran---------*/
+#imageDufont{
+    padding: 60px;
+   background: url(images/f8.jpeg) no-repeat fixed 50% 50%; /* font d'ecran sans repetition */
+     background-size:cover ; /* pour conserver la proportion de l'image du font d'ecran */
+     height: 799px; /* la hauteur du font d'ecran */
+ }
+ h1{
+    font-family: "Dancing script",cursive; /* type de police */
+    text-align: center;/* aligner au centre */
+    color: antiquewhite;/* la couleur du text */
+    font-size: 6em;/* la taille du text h1 */
+    margin-top:100px ; /* espace vertical pour la marge en haut */
+    text-shadow: #FFFAE1;/* pour faire de l'ombre sur le text de h1 */
+}
+#premierTrait{
+    height: 1px;/* la hauteur du trait */
+    width: 25%; /* la largeur du trait*/
+    margin: -3px auto; /* marge haut */
+    background-color: #FFFAE1; /* la couleur du trait */
+    box-shadow: 1px 3px 2px black;/* pour faire de l'ombre sur le trait*/
+}
+h3{
+    text-align: center; /* aligner au centre */
+    color: antiquewhite;/*couleur du text */
+    font-size: 3em; /* la taille du text h3 */
+    text-shadow: 1px 3px 2px black; /* pour faire de l'ombre sur le text de h3 */
+}
+/* ****************NAVBAR**************** */
+
+nav{
+    overflow: hidden;
+    background-color: #FFFAE1;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+
+}
+header a{
+    float: right;
+    font-size: 1.2em;
+    color: black;
+}
+header  a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+ /* **************PRESENTATION************* */
+ #prestations{
+    background-color:#FFFAE1; /*la couleur du font de la partie section(id=presentation)*/ 
+    padding: 10px 0px 100px 0;/*ecart de haut et en bas */
+}
+#textIntro{
+    padding: 0px 20%;/*ecart de haut et a droite */
+}
+#prestations{
+  display: flex; /* maniere dont les images sont affichées */
+  flex-wrap: wrap; /* pour permettre aux images de s'afficher sur une autre ligne si 1er plein */
+  justify-content: space-between; /* la façon dont l'espace doit etre réparti si la ligne est pleine */ 
+  padding: 30px 15%; /*ecart de haut et a droite */
+}
+.imagesPrestation {
+    font-family: "Dancin script",cursive;/* type de police */
+    text-align: center;/* aligner au centre */
+    font: size 1.8em;/* la taille du text h4 */
+    margin: 15px;/*marge en haut entre les images*/
+    font-weight: 300px;
+   }
+   #prestations p{
+    background-color: #FFFAE1;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    right: 100px;
+    
+  }
+imagesPrestation img{
+   border-radius: 10px; /* pour faire la coubure de chaque coin*/
+   box-shadow: 5px 5px 3px rgb(0,0,0,0.7); /*pour faire de l'ombre */ 
+}
+.imagesPrestation img:hover{
+  opacity: 0,5; /* le degre de transparence du zoom*/
+  transform: scale(1.25); /* pour faire apparaitre les photo en zoom*/ 
+  transition: 0.6s ease-in-out; /* la vitesse d'animation des photo */
+}
+
+/* *************TOURISME*************** */
+#tourisme{ /*---style partie video---*/
+    height: 2090px; /*-la hauteur du partie section -*/
+    background-color: #f1f2f6; /*-la couleur du partie section */
+    padding: 1px 2%; /*-ecart de haut et a droite */
+}
+#tourisme h2{  
+    padding-top: 40px;/*-ecart entre h2 et les video-*/
+}
+#tourisme li{
+    margin: 65px 100px 0px 65px; /*marge sur les quatre cotés*/
+    height: 256px; /*-la hauteur du contenu de toutes les videos-*/
+    width: 55%; /*-la largeur de la boite li qui contient les video */
+    max-width: 550px; /*-la largeur maximal du contenu de li */
+    float: left; /* pour placer le contenu de li a gauche */
+    box-shadow: 6px 6px 28px -1px rgba(22, 22, 22, 0.7); /* pour faire de l'ombre */
+}
+#tourisme #pd, #tourisme #pq {
+   float: right;/* pour placer le contenu de li a droite */
+}
+#pd p, #pq p {
+ float: left;/* pour placer le contenu de li a gauche*/
+ margin-left: -180px; /* marge a gauche */
+ 
+}
+/*-----------Caire----------------*/
+#ifont{
+    padding: 60px;
+    background: url(images/c3.jpeg) no-repeat fixed 50% 50%;/* image du font d'ecran du caire.html */
+     background-size:cover ;/* pour conserver la proportion de l'image du font d'ecran */
+     height: 799px;/* la hauteur du font d'ecran */
+ }
+ #pTrait{
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: #FFFAE1;
+    box-shadow: 1px 3px 2px black;
+}
+/*-----------Dubai----------------*/
+#dfont{
+    padding: 60px;
+    background: url(images/d6.webp) no-repeat fixed 50% 50%;/* image du font d'ecran du dubai.html */
+     background-size:cover ;/* pour conserver la proportion de l'image du font d'ecran */
+     height: 799px;/* la hauteur du font d'ecran */
+ }
+ /*-----------istanbul----------------*/
+#tfont{
+    padding: 60px;
+    background: url(images/Is1.jpeg) no-repeat fixed 50% 50%;/* image du font d'ecran du istanbul.html */
+     background-size:cover ;/* pour conserver la proportion de l'image du font d'ecran */
+     height: 799px;/* la hauteur du font d'ecran */
+ }
+ /*-----------new-york----------------*/
+#nfont{
+    padding: 60px;
+    background: url(images/nw3.jpeg) no-repeat fixed 50% 50%;/* image du font d'ecran du new-york.html */
+     background-size:cover ;/* pour conserver la proportion de l'image du font d'ecran */
+     height: 799px;/* la hauteur du font d'ecran */
+ }
+  /*-----------tokyo----------------*/
+#tofont{
+    padding: 60px;
+    background: url(images/to1.jpeg) no-repeat fixed 50% 50%;/* image du font d'ecran du tokyo.html */
+     background-size:cover ;/* pour conserver la proportion de l'image du font d'ecran */
+     height: 799px;/* la hauteur du font d'ecran */
+ }
+ 
